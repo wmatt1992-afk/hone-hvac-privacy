@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "enabled": false,
+  "enabled": true,
   "provider": "none",
   "refreshMs": 60000,
   "refreshAllowed": true,
