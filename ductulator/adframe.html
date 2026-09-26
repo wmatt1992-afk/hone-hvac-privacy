@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--
+  Provider frame TEMPLATE — hosted by the owner (GitHub Pages, next to ads.json), loaded by the
+  Windows app inside a sandboxed iframe (opaque origin, no access to the app). This page is where
+  a verified ad network's tag goes, so the app never embeds provider code and the provider can be
+  changed without a Store resubmission.
+
+  It ships EMPTY on purpose: no network could be verified for a Microsoft-Store Electron app
+  (docs/WINDOWS-ADS.md). When one is confirmed in writing (platform permission, refresh policy,
+  test ids), add ONLY its documented tag below and list its hosts in this page's CSP.
+  Query: ?w=300&h=600&slot=left
+-->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src https: data:; style-src 'unsafe-inline'; script-src 'self'; connect-src https:; frame-src https:">
+<title>Advertisement</title>
+<style>html,body{margin:0;background:transparent;overflow:hidden}#ad{display:flex;align-items:center;justify-content:center}</style>
+</head>
+<body>
+<div id="ad"></div>
+<!-- PROVIDER TAG GOES HERE, e.g. (AdsJumbo WinJS sample shape — UNVERIFIED for Electron; SDK URL is issued by e-mail):
+<script src="https://adsjumbo.com/…sdk…"></script>
+<script>sdk.showBanner("YOUR_APP_ID", Number(new URLSearchParams(location.search).get("w")), Number(new URLSearchParams(location.search).get("h")), "#ad");</script>
+-->
+</body>
+</html>

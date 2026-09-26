@@ -1,0 +1,22 @@
+{
+  "v": 1,
+  "enabled": true,
+  "provider": "none",
+  "refreshMs": 60000,
+  "refreshAllowed": true,
+  "sizes": [[300, 600], [160, 600], [300, 250]],
+  "house": {
+    "creatives": [
+      {
+        "_comment": "Example direct sponsorship. Remove or replace. img must be https on the same host as this file (CSP); w/h in CSS px; the creative is shown at its own size inside a slot at least that big.",
+        "img": "https://wmatt1992-afk.github.io/hone-hvac-privacy/ductulator/sponsor-example-300x600.png",
+        "href": "https://example.com/",
+        "alt": "Sponsor",
+        "w": 300, "h": 600
+      }
+    ]
+  },
+  "frame": {
+    "url": "https://wmatt1992-afk.github.io/hone-hvac-privacy/ductulator/adframe.html?w={w}&h={h}&slot={slot}"
+  }
+}
