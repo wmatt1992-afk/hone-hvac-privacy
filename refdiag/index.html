@@ -21,20 +21,33 @@ footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:v
 </style></head><body><div class="w">
 
 <h1>HONE RefDiag — Privacy Policy</h1>
-<p class="sub">Last updated 30 August 2026</p>
+<p class="sub">Last updated 11 October 2026</p>
 
-<p class="lead">HONE RefDiag does not collect, transmit, or share any personal data. The app works
-entirely on your device and makes no network requests.</p>
+<p class="lead">HONE RefDiag does not collect, transmit, or share anything you type into it. Every
+diagnosis is computed on your device. The only thing the app ever sends anywhere is the minimum
+needed to process and verify an in-app purchase, described below.</p>
 
 <div class="card">
-<strong>The short version:</strong> nothing you type into this app leaves your phone. There are no
-accounts, no analytics, no advertising, no trackers, and no servers to send anything to.
+<strong>The short version:</strong> your readings, your diagnoses and your saved sessions never leave
+your phone. There are no accounts, no analytics, no advertising and no trackers. The one exception is
+the purchase system: the Android app uses RevenueCat to handle its one-time unlock, and that is the
+only data that ever goes out.
 </div>
 
 <h2>What we collect</h2>
-<p><strong>Nothing.</strong> The app has no sign-in, no user accounts, and no analytics or crash
-reporting SDK. It does not read your contacts, location, camera, microphone, files, or device
-identifiers.</p>
+<p><strong>Diagnostic data: nothing.</strong> The app has no sign-in, no user accounts, and no analytics
+or crash reporting SDK. It does not read your contacts, location, camera, microphone or files, and it
+never transmits a reading, a result or a saved session.</p>
+<p><strong>Purchase data (Android only):</strong> to sell and verify the one-time unlock, the Android
+app includes the RevenueCat SDK, which acts as our payment processor. When the app starts it
+generates an anonymous app-user identifier, and when you buy or restore the unlock it sends your
+Google Play purchase history for this app, that identifier, and the device identifiers RevenueCat
+uses to attribute and protect purchases, to RevenueCat's servers. This is used solely to confirm
+that your purchase is valid and to restore it on a new phone. We do not receive your name, email,
+or payment card details; Google Play handles the payment itself. RevenueCat's handling of this data
+is governed by its own privacy policy. Data is encrypted in transit. You can ask us to delete your
+purchase record by emailing the address below.</p>
+<p>The Windows version of HONE RefDiag has no purchase system and sends nothing at all.</p>
 
 <h2>Data stored on your device</h2>
 <p>Diagnostic sessions you save, and your app preferences, are written to your device's local
@@ -49,15 +62,16 @@ storage so the app can show them to you again. This information:</p>
 "shared." We mention it here anyway so you know exactly what the app does.</p>
 
 <h2>Network access</h2>
-<p>The app performs its diagnosis offline using a knowledge base bundled inside the app itself. It
-makes no HTTP requests, opens no sockets, and loads nothing from the internet at runtime. It works
+<p>The app performs its diagnosis offline using a knowledge base bundled inside the app itself. The
+diagnostic engine makes no HTTP requests and loads nothing from the internet at runtime. It works
 with the phone in airplane mode, which is deliberate — it is built to be used in mechanical rooms
-and basements with no signal.</p>
+and basements with no signal. The only network use is the purchase system described above, and a
+purchase you have already made keeps working offline indefinitely.</p>
 
 <h2>Payments</h2>
-<p>If a paid tier is offered in a future version, purchases are handled entirely by Google Play. The
-app never sees, receives, or stores your payment details. Google's own privacy policy governs that
-transaction.</p>
+<p>The one-time unlock is sold through Google Play and verified through RevenueCat. The app never
+sees, receives, or stores your payment card details; Google Play's own privacy policy governs the
+payment transaction, and RevenueCat's governs purchase verification.</p>
 
 <h2>Children</h2>
 <p>HONE RefDiag is a professional tool for HVAC and refrigeration technicians. It is intended for
@@ -65,7 +79,7 @@ adults and is not directed at children under 18.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the updated version will be posted at this URL with a new "last updated"
-date. Because the app collects nothing, changes are expected to be rare.</p>
+date. Changes are expected to be rare.</p>
 
 <h2>Contact</h2>
 <p>Questions about this policy or the app: <strong>honebuilds@gmail.com</strong></p>
